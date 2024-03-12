@@ -30,7 +30,6 @@ class WeatherCubit extends HydratedCubit<WeatherState> {
       emit(
         state.copyWith(
           status: WeatherStatus.success,
-          temperatureUnits: units,
           weather: weather.copyWith(temperature: Temperature(value: value)),
         ),
       );
